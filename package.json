@@ -18,12 +18,20 @@
     "url": "https://github.com/juliakroger/lush-api/issues"
   },
   "homepage": "https://github.com/juliakroger/lush-api#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "dependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "bcryptjs": "^2.4.3",
     "config": "^3.2.5",
     "express": "^4.17.1",
     "express-validator": "^6.4.0",
     "fuse.js": "^3.4.6",
+    "husky": "^4.2.3",
     "moment": "^2.24.0",
     "mongoose": "^5.9.1",
     "short-uuid": "^3.1.1"
