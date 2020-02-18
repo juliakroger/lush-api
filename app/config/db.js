@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const to = require('../utils/to')
+const log = require('../utils/log')
 const url = require('./config')
 
 const connectDB = async () => {
@@ -12,10 +13,10 @@ const connectDB = async () => {
   )
 
   if (err) {
-    console.log(err.message)
+    log.error(err.message)
     process.exit(1)
   }
-  console.log('DB connected')
+  log.info('DB connected')
 }
 
 module.exports = connectDB
