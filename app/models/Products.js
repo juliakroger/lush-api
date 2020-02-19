@@ -1,12 +1,15 @@
 const mongoose = require('mongoose')
 
 const ProductsSchema = new mongoose.Schema({
-  title: { type: String, required: true },
+  title: String,
+  isPartial: {
+    type: Boolean,
+    default: true
+  },
+  url: String,
+  images: [String],
   description: String,
-  onPromotion: Boolean,
-  scent: [String],
-  mood: [String],
-  benefit: [String],
+  onPromotion: { type: Boolean, default: false },
   type: [String],
   ingredients: [String],
   rate: { type: Number, default: 0 },
