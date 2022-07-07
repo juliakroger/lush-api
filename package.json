@@ -34,7 +34,7 @@
     "express-validator": "^6.4.0",
     "fuse.js": "^3.4.6",
     "husky": "^4.2.3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongoose": "^5.9.1",
     "pino": "^5.16.0",
     "pino-pretty": "^3.6.0",
